@@ -30,3 +30,11 @@ for including the most difficult which is error management. In the last part of
 the code, there is a bug in respect to printing of files.
 I will not go about long talks because I believe my code is straight forward
 with comments and docstrings.
+
+**References**
+I majorly research about my errors on 
+1) [stackoverflow website](https://stackoverflow.com/questions/19124601/pretty-print-an-entire-pandas-series-dataframe)
+2) [pandas website](https://pandas.pydata.org/docs/reference/api/pandas.read_csv.html)
+3) [python website](https://docs.python.org/3/tutorial/classes.html)
+
+Thanks
