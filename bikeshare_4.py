@@ -88,7 +88,7 @@ def get_filters():
 """ Here I imported the bikeshare data and converted the time column dtype to
  date. I also created some new columns for the ease of working with the data"""
 
-chicago_csv = pd.read_csv('C:\\Users\\Obi\\Desktop\\RMIT\\my_codes\\my_project2\\chicago.csv')
+chicago_csv = pd.read_csv('chicago.csv')
 
 # print(chicago_csv)
 # pd.set_option('display.max_columns', None)
@@ -109,7 +109,7 @@ chicago_csv.drop(['Unnamed: 0'], axis=1, inplace=True)
 """Here for the new_york_city dataset"""
 
 new_york_city_csv = pd.read_csv(
-    'C:\\Users\\Obi\\Desktop\\RMIT\\my_codes\\my_project2\\new_york_city.csv')
+    'new_york_city.csv')
 
 # pd.set_option('display.max_columns', None)
 
@@ -128,7 +128,7 @@ new_york_city_csv.drop(['Unnamed: 0'], axis=1, inplace=True)
 
 """ Here for the washington dataset"""
 
-washington_csv = pd.read_csv('C:\\Users\\Obi\\Desktop\\RMIT\\my_codes\\my_project2\\washington.csv')
+washington_csv = pd.read_csv('washington.csv')
 
 washington_csv['Start Time'] = pd.to_datetime(washington_csv['Start Time'])
 washington_csv['End Time'] = pd.to_datetime(washington_csv['End Time'])
