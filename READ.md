@@ -17,9 +17,16 @@ programing with python](https://www.udacity.com/course/programming-for-data-scie
 
 **Approach**
 when I open the file and after like hours of thinking. I thought about an
-approach in which I divided the work to be done into 
+approach in which I divided the work to be done into
 3 parts
 1) to get user input
 2) to parse it to the load function
 3) to solve for the calculations
 you can have a look at this in more details in the [python file](https://github.com/marshal-stack/pdsnd_github/commit/d3a0ba763e8e96afacd653f32ceb9d0f76f1be0d)
+
+**Bugs**
+During the project, there appear to be a lot of things that I didn't account
+for including the most difficult which is error management. In the last part of
+the code, there is a bug in respect to printing of files.
+I will not go about long talks because I believe my code is straight forward
+with comments and docstrings.
