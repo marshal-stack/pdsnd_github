@@ -1,4 +1,3 @@
-import datetime
 import time
 import pandas as pd
 import numpy as np
@@ -88,7 +87,7 @@ def get_filters():
 """ Here I imported the bikeshare data and converted the time column dtype to
  date. I also created some new columns for the ease of working with the data"""
 
-chicago_csv = pd.read_csv('C:\\Users\\Obi\\Desktop\\RMIT\\my_codes\\my_project2\\chicago.csv')
+chicago_csv = pd.read_csv('chicago.csv')
 
 # print(chicago_csv)
 # pd.set_option('display.max_columns', None)
@@ -109,7 +108,7 @@ chicago_csv.drop(['Unnamed: 0'], axis=1, inplace=True)
 """Here for the new_york_city dataset"""
 
 new_york_city_csv = pd.read_csv(
-    'C:\\Users\\Obi\\Desktop\\RMIT\\my_codes\\my_project2\\new_york_city.csv')
+    'new_york_city.csv')
 
 # pd.set_option('display.max_columns', None)
 
@@ -128,7 +127,7 @@ new_york_city_csv.drop(['Unnamed: 0'], axis=1, inplace=True)
 
 """ Here for the washington dataset"""
 
-washington_csv = pd.read_csv('C:\\Users\\Obi\\Desktop\\RMIT\\my_codes\\my_project2\\washington.csv')
+washington_csv = pd.read_csv('washington.csv')
 
 washington_csv['Start Time'] = pd.to_datetime(washington_csv['Start Time'])
 washington_csv['End Time'] = pd.to_datetime(washington_csv['End Time'])
@@ -257,7 +256,8 @@ def user_stats(df):
 
     # Display counts of gender
 
-    """ Here I used a try statement to handle another KeyError"""
+    """ Here I used a try statement to handle another KeyError relating to lack
+    of gender data for Washington"""
 
     gender = 1
     while gender == 1:
@@ -275,7 +275,8 @@ def user_stats(df):
 
     # Display earliest, most recent, and most common year of birth
 
-    """ Here I used a try statement to handle another KeyError"""
+    """ Here I used a try statement to handle another KeyError relating to lack
+    of birth year data for Washington"""
 
     birth_year = 1
     while birth_year == 1:
@@ -312,9 +313,9 @@ def main():
             show_five_lines = input(
                 '\nDo you want to see first 5 lines of raw data? Enter yes or no \n').lower()
             if show_five_lines == Answer:
-                read_five = pd.read_csv(CITY_DATA[city], chunksize=5)
+                read_ten = pd.read_csv(CITY_DATA[city], chunksize=10)
 
-                print(read_five)
+                print(read_ten)
             else:
                 break
 
