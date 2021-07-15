@@ -1,4 +1,3 @@
-import datetime
 import time
 import pandas as pd
 import numpy as np
@@ -257,7 +256,8 @@ def user_stats(df):
 
     # Display counts of gender
 
-    """ Here I used a try statement to handle another KeyError"""
+    """ Here I used a try statement to handle another KeyError relating to lack
+    of gender data for Washington"""
 
     gender = 1
     while gender == 1:
@@ -275,7 +275,8 @@ def user_stats(df):
 
     # Display earliest, most recent, and most common year of birth
 
-    """ Here I used a try statement to handle another KeyError"""
+    """ Here I used a try statement to handle another KeyError relating to lack
+    of birth year data for Washington"""
 
     birth_year = 1
     while birth_year == 1:
