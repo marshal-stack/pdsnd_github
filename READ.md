@@ -9,3 +9,8 @@ namely: **Chicago, Washington and New York City**
 This will be to write a code that will answer users question based on the data
 acquired, meaning that irrespective of the selected location, month or day.
 The user gets some answers to specified questions.
+
+**SOFTWARES**
+I used Atom for my code editing and command line interface(git-bash) to run
+my codes. you can get help on setting this up by [refering to udacity course on
+programing with python](https://www.udacity.com/course/programming-for-data-science-nanodegree--nd104)
