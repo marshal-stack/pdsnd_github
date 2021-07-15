@@ -312,9 +312,9 @@ def main():
             show_five_lines = input(
                 '\nDo you want to see first 5 lines of raw data? Enter yes or no \n').lower()
             if show_five_lines == Answer:
-                read_five = pd.read_csv(CITY_DATA[city], chunksize=5)
+                read_ten = pd.read_csv(CITY_DATA[city], chunksize=10)
 
-                print(read_five)
+                print(read_ten)
             else:
                 break
 
